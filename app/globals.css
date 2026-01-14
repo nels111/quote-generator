@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  @apply bg-white text-slate-900;
+}
+
+.input{
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-scGreen focus:ring-4 focus:ring-scGreen/10;
+}
+
+.label{
+  @apply mb-2 block text-sm font-semibold text-scGreen;
+}
+
+.helper{
+  @apply mt-1 text-xs text-slate-500;
+}
+
+.error{
+  @apply mt-1 text-xs font-medium text-red-600;
+}
+
+.card{
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
